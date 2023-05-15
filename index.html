@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+    
+        #userId {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1em;
+        }
+    
+        #searchButton {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    
+        #searchButton:hover {
+            background-color: #0056b3;
+        }
+    
+        #data {
+            margin-top: 20px;
+        }
+    
+        p {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        #postDetails {
+        margin-top: 20px;
+        }
+
+        #postDetails h2 {
+        margin-bottom: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Test API con JSONPlaceholder</h1>
+    <input id="userId" type="text" placeholder="Introduce el ID del usuario">
+    <button id="searchButton">Buscar publicaciones</button>
+    <div id="data"></div>
+    <div id="postDetails"></div>
+    <script src="api.js"></script>
+</body>
+</html>
